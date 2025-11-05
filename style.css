@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+  font-family: "Funnel Sans", sans-serif;
+}
+.btn {
+  font-weight: 600;
+}
+header {
+  left: 0;
+  right: 0;
+  top: 1rem;
+  margin: 0 auto;
+  width: 80%;
+  height: 7rem;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.15); /* полупрозрачность */
+  backdrop-filter: blur(4px) saturate(110%); /* стекло */
+  -webkit-backdrop-filter: blur(10px) saturate(180%); /* для Safari */
+  border-radius: 50px; /* если хочешь закругление */
+  border: 1px solid rgba(0, 0, 0, 0.25); /* лёгкая “рамка” */
+  z-index: 1000;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+}
+.navigation {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: 200ms;
+}
+.navigation:hover {
+  color: #4e4e4e;
+  transition: 200ms;
+}
+.book_now {
+  color: #4e4e4e;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: none;
+  font-size: 1rem;
+  transition: 200ms;
+}
+.book_now:hover {
+  background-color: #4e4e4e;
+  color: #fff;
+  transition: 200ms;
+}
+/* SECTION 1 */
+#sec1 {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 0.5rem;
+}
+/* Below panel */
+.title_text {
+  background-color: #4e4e4e;
+  width: 80%;
+  height: 23%;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #4e4e4e;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.15); /* полупрозрачность */
+  backdrop-filter: blur(4px) saturate(110%); /* стекло */
+  -webkit-backdrop-filter: blur(10px) saturate(180%); /* для Safari */
+  border-radius: 50px; /* если хочешь закругление */
+  border: 1px solid rgba(0, 0, 0, 0.25); /* лёгкая “рамка” */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.title_btn {
+  background-color: #4e4e4e;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: none;
+  font-size: 1rem;
+  transition: 200ms;
+  width: 12rem;
+  height: 4rem;
+}
+.title_btn:hover {
+  background-color: #fff;
+  color: #4e4e4e;
+  transition: 200ms;
+}
+
+#sec1 .bg {
+  position: fixed;
+  background-image: url(Images/hamdhulla-shakeeb-SxBfYBCI0CA-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background-attachment: fixed;
+}
+/* SECTION 2 ============== ================================*/
+#sec2 {
+  margin-top: 1rem;
+  width: 100%;
+  height: fit-content;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.cards {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 1rem;
+}
+.cards_bg {
+  background-color: rgb(230, 230, 230);
+  width: 76%;
+  border-radius: 25px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25), 0 0 15px rgba(255, 255, 255, 0.2);
+}
+.card {
+  flex: 0 1 13rem;
+  width: 22%;
+  height: 22rem;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  transition: 200ms;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25), 0 0 15px rgba(255, 255, 255, 0.2);
+}
+.georgia {
+  background-image: url(Images/cards/sea.jpg);
+}
+.sweden {
+  background-image: url(Images/cards/sweden.jpg);
+}
+.islands {
+  background-image: url(Images/cards/islands.jpg);
+}
+.island {
+  background-image: url(Images/cards/island.jpg);
+}
+.card_text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  align-self: flex-end;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+.card_btn {
+  background-color: #fff;
+  color: #4e4e4e;
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  border: none;
+  font-size: 0.7rem;
+  transition: 200ms;
+  width: 6rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  padding: 1rem;
+}
+.card_btn:hover {
+  color: #fff;
+  background-color: #4e4e4e;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.card_modal {
+  background-color: #4e4e4e;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  justify-content: space-between;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.15); /* полупрозрачность */
+  backdrop-filter: blur(4px) saturate(110%); /* стекло */
+  -webkit-backdrop-filter: blur(10px) saturate(180%); /* для Safari */
+  border-radius: 50px 0; /* если хочешь закругление */
+  border: 1px solid rgba(0, 0, 0, 0.25); /* лёгкая “рамка” */
+}
+
+/* SECTION 3 ========= */
+#sec3 {
+    background-color: #fff;
+}
+#sec3 h2 {
+  text-align: center;
+  padding-top: 4rem;
+  color: #4e4e4e;
+}
+.reasons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-bottom: 5rem;
+}
+.reason {
+  color: #4e4e4e;
+  flex: 1 1 20%;
+  max-width: 20%;
+  min-width: 260px;
+  background-color: rgb(230, 230, 230);
+  padding: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25), 0 0 15px rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+}
+/* SECTION 4 ========================================================================================================================================= */
+#sec4 {
+     background-image: url(Images/maps.jpg);
+     padding: 3rem;
+}
+/* #sec4 > .bg {
+    background-image: url(Images/maps.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(.6);
+} */
+.reviews {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+.review {
+    flex: 1 1 20%;
+    padding-top: 2.4rem;
+    text-align: center;
+    max-width: 20%;
+    min-width: 260px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.review img{
+    width: 4rem;
+}
+
+@media (max-width:940px){
+    #sec3 {
+        height: fit-content;
+    }
+    #sec4 {
+        padding: 3rem;
+        background-image: url(Images/maps.jpg);
+    }
+}
+
+
+
+
+
+footer {
+    background-color: #fff;
+    width: 100%;
+    height: 10vh;
+}
