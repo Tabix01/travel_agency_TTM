@@ -7,20 +7,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="logo active">
-        <h2><a class="logo" href="index.html">ASQABAQ</a></h2>
-      </div>
-      <nav>
-        <a href="About.html" class="navigation">About</a>
-        <a href="" class="navigation">Offers</a>
-        <a href="Contact.html" class="navigation">Contact</a>
-        <a href="" class="navigation">Profile</a>
-      </nav>
-      <button class="book_now btn">Book Now</button>
-    </header>
+ <header>
+  <div class="logo active">
+    <h2><a class="logo" href="index.html">ASQABAQ</a></h2>
+  </div>
+
+  <nav class="nav-links">
+    <a href="About.html" class="navigation">About</a>
+    <a href="#" class="navigation">Offers</a>
+    <a href="Contact.html" class="navigation">Contact</a>
+    <a href="Profile.html" class="navigation">Profile</a>
+  </nav>
+
+  <button class="book_now btn">Book Now</button>
+
+  <!-- Burger -->
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
     <section id="profile">
-        <div class="bg"></div>
+      <div class="bg"></div>
       <div class="profile_bg">
         <h2 style="text-align: center">Profile</h2>
         <div class="main_info">
@@ -50,12 +59,15 @@
           <div class="trip_info">
             <p><span class="stats">Location: </span>Sweden</p>
             <p><span class="stats">Date:</span> 01.01.2028</p>
-            <p><span class="stats">Status:</span> <span class="confirmed">Confirmed</span></p>
+            <p>
+              <span class="stats">Status:</span>
+              <span class="confirmed">Confirmed</span>
+            </p>
             <button class="edit_btn">Cancel</button>
-
           </div>
         </div>
       </div>
     </section>
+    <script src="main.js"></script>
   </body>
 </html>

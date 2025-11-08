@@ -7,19 +7,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="logo active"><h2><a class="logo" href="index.html">ASQABAQ</a></h2></div>
-      <nav>
+    <header data-aos="fade-down">
+      <div class="logo active">
+        <h2><a class="logo" href="index.html">ASQABAQ</a></h2>
+      </div>
+
+      <nav class="nav-links">
         <a href="About.html" class="navigation">About</a>
-        <a href="" class="navigation">Offers</a>
+        <a href="#" class="navigation">Offers</a>
         <a href="Contact.html" class="navigation">Contact</a>
         <a href="Profile.html" class="navigation">Profile</a>
       </nav>
+
       <button class="book_now btn">Book Now</button>
+
+      <!-- Burger -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     </header>
+
     <section id="sec1">
       <div class="bg"></div>
-      <div class="title_text">
+      <div class="title_text" data-aos="fade-up">
         <h1 class="title">Your World Awaits</h1>
         <p>
           Handcrafted travel experiences designed for comfort, authenticity, and
@@ -32,7 +46,7 @@
       <div class="cards_bg">
         <h2>Top Destinations</h2>
         <div class="cards">
-          <div class="card georgia">
+          <div class="card georgia" data-aos="fade-up" data-aos-duration="800" >
             <div class="card_modal">
               <div class="card_text">
                 <h3>Tblisi</h3>
@@ -45,7 +59,7 @@
               <button class="card_btn">Learn More</button>
             </div>
           </div>
-          <div class="card sweden">
+          <div class="card sweden" data-aos="fade-up" data-aos-duration="1000">
             <div class="card_modal">
               <div class="card_text">
                 <h3>Sweden</h3>
@@ -58,7 +72,7 @@
               <button class="card_btn">Learn More</button>
             </div>
           </div>
-          <div class="card island">
+          <div class="card island" data-aos="fade-up" data-aos-duration="1200">
             <div class="card_modal">
               <div class="card_text">
                 <h3>Tblisi</h3>
@@ -71,7 +85,7 @@
               <button class="card_btn">Learn More</button>
             </div>
           </div>
-          <div class="card islands">
+          <div class="card islands" data-aos="fade-up" data-aos-duration="1400">
             <div class="card_modal">
               <div class="card_text">
                 <h3>Tblisi</h3>
@@ -88,48 +102,76 @@
       </div>
     </section>
     <section id="sec3">
-        <div class="bg"></div>
-        <h2>Why Choose Us</h2>
-        <div class="reasons">
-            <div class="reason">
-                <img class="icon" src="Images/icons/calendar.png" alt="">
-                <h3>All-in-One Booking</h3>
-                <p>From flights and hotels to transfers and guided tours — everything in one place. Plan your trip in minutes, not hours.</p>
-            </div>
-            <div class="reason">
-                <img class="icon" src="Images/icons/plane.png" alt="">
-                <h3>Comfort in Every Journey</h3>
-                <p>Travel without stress — we take care of everything: transport, hotels, routes, and all the small details.</p>
-            </div>
-            <div class="reason">
-                <img class="icon" src="Images/icons/headphones.png" alt="">
-                <h3>24/7 Support</h3>
-                <p>We're always in touch. Whatever happens, our team will help you instantly, wherever you are.</p>
-            </div>
+      <div class="bg"></div>
+      <h2>Why Choose Us</h2>
+      <div class="reasons">
+        <div class="reason" data-aos="fade-up">
+          <img class="icon" src="Images/icons/calendar.png" alt="" />
+          <h3>All-in-One Booking</h3>
+          <p>
+            From flights and hotels to transfers and guided tours — everything
+            in one place. Plan your trip in minutes, not hours.
+          </p>
         </div>
+        <div class="reason" data-aos="fade-up">
+          <img class="icon" src="Images/icons/plane.png" alt="" />
+          <h3>Comfort in Every Journey</h3>
+          <p>
+            Travel without stress — we take care of everything: transport,
+            hotels, routes, and all the small details.
+          </p>
+        </div>
+        <div class="reason" data-aos="fade-up">
+          <img class="icon" src="Images/icons/headphones.png" alt="" />
+          <h3>24/7 Support</h3>
+          <p>
+            We're always in touch. Whatever happens, our team will help you
+            instantly, wherever you are.
+          </p>
+        </div>
+      </div>
     </section>
     <section id="sec4">
-        <div class="bg"></div>
-        <div class="reviews">
-            <div class="review">
-                <img src="Images/icons/circle-user.svg" alt="">
-                <p>"The support team answered instantly, even at night. It felt like traveling with friends, not an agency."</p>
-                <p>@Tamerlan Cristiano</p>
-            </div>
-            <div class="review">
-                <img src="Images/icons/circle-user.svg" alt="">
-                <p>"The trip was comfortable, stress-free, and full of amazing memories. 100% recommend!"</p>
-                <p>@Daniel Lapotup</p>
-            </div>
-            <div class="review">
-                <img src="Images/icons/circle-user.svg" alt="">
-                <p>"Incredible! This is the best website in the University. Im honored to witness such talent"</p>
-                <p>@Kuralay Makhmetova</p>
-            </div>
+      <div class="bg"></div>
+      <div class="reviews">
+        <div class="review">
+          <img src="Images/icons/circle-user.svg" alt="" />
+          <p>
+            "The support team answered instantly, even at night. It felt like
+            traveling with friends, not an agency."
+          </p>
+          <p>@Tamerlan Zhov</p>
         </div>
+        <div class="review">
+          <img src="Images/icons/circle-user.svg" alt="" />
+          <p>
+            "The trip was comfortable, stress-free, and full of amazing
+            memories. 100% recommend!"
+          </p>
+          <p>@Dzhumandzhi Lapotup</p>
+        </div>
+        <div class="review">
+          <img src="Images/icons/circle-user.svg" alt="" />
+          <p>
+            "Incredible! This is the best website in the University. Im honored
+            to witness such talent"
+          </p>
+          <p>@Kuralay Makhmetova</p>
+        </div>
+      </div>
     </section>
     <footer>
-        <a href="">GIT</a>
+      <a href="">GIT</a>
     </footer>
+
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // animation duration (ms)
+        once: true, // animate only once
+        offset: 100, // start animation earlier/later
+      });
+    </script>
   </body>
 </html>
